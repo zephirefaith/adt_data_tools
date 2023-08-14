@@ -1,4 +1,4 @@
-Output of dataloader is a dictionary with following keys:  
+Output of dataloader is a dictionary with following keys and results in a tuple. The first element is data as described below and 2nd element is dt b/w queried timestamp and data's timestamp:  
 - "rgb": Numpy array of the image from RGB camera
 - "segmentation": Numpy array of the ground-truth segmentation image
 - "pose": [Aria 3D Pose object](https://github.com/facebookresearch/projectaria_tools/blob/caa23d4bb14a6107d9c0f46d76b7a84e6a53cc71/projects/AriaDigitalTwinDatasetTools/data_provider/AriaDigitalTwinDataTypes.h#L90) specifying left IMU's position wrt world
